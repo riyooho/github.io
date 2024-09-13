@@ -18,7 +18,7 @@
 
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
-  line-height: 1.65;
+  line-height: 1.5;
 }
 
 .index-page {
@@ -79,7 +79,7 @@
 
 .notion-collection-card {
   border-radius: 16px;
-  box-shadow: none;
+  box-shadow:none;
 }
 
 .notion-collection-card-cover img {
@@ -130,7 +130,7 @@
 .notion-h1,
 .notion-h2,
 .notion-h3 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.1em;
 }
 
 .notion-callout {
@@ -172,7 +172,7 @@
 }
 
 .notion-collection-row {
-  padding-bottom: 1em;
+  padding-bottom: 0;
 }
 
 .notion-collection-page-properties .notion-collection-column-title {
