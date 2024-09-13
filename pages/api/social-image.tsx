@@ -6,13 +6,13 @@ import { ImageResponse } from '@vercel/og'
 import { api, apiHost, rootNotionPageId } from '@/lib/config'
 import { NotionPageInfo } from '@/lib/types'
 
-const interRegularFontP = fetch(
-  new URL('../../public/fonts/Inter-Regular.ttf', import.meta.url)
-).then((res) => res.arrayBuffer())
+// const interRegularFontP = fetch(
+//   new URL('../../public/fonts/Inter-Regular.ttf', import.meta.url)
+// ).then((res) => res.arrayBuffer())
 
-const interBoldFontP = fetch(
-  new URL('../../public/fonts/Inter-SemiBold.ttf', import.meta.url)
-).then((res) => res.arrayBuffer())
+// const interBoldFontP = fetch(
+//   new URL('../../public/fonts/Inter-SemiBold.ttf', import.meta.url)
+// ).then((res) => res.arrayBuffer())
 
 export const config = {
   runtime: 'experimental-edge'
@@ -163,13 +163,13 @@ export default async function OGImage(req: NextRequest) {
       fonts: [
         {
           name: 'Inter',
-          data: interRegularFont,
+          url: 'https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap',
           style: 'normal',
           weight: 400
         },
         {
           name: 'Inter',
-          data: interBoldFont,
+          url: 'https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap',
           style: 'normal',
           weight: 700
         }
