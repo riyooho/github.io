@@ -38,10 +38,10 @@ export default async function OGImage(req: NextRequest) {
   const pageInfo: NotionPageInfo = await pageInfoRes.json()
   console.log(pageInfo)
 
-  const [interRegularFont, interBoldFont] = await Promise.all([
-    interRegularFontP,
-    interBoldFontP
-  ])
+//  const [interRegularFont, interBoldFont] = await Promise.all([
+//    interRegularFontP,
+//    interBoldFontP
+//  ])
 
   return new ImageResponse(
     (
